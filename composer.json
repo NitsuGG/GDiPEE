@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Router\\": "class/core/router",
+            "Core\\": "class/core",
+            "Controller\\": "controller/",
+            "Model\\": "model/",
+            "Security\\": "class/core/security",
+            "Model\\Authentification\\": "model/authentification",
+            "Core\\Authentification\\": "class/core/authentification",
+            "Controller\\Authentification\\": "controller/authentification"
+
+
+        }
+    }
+} 

@@ -1,0 +1,10 @@
+#On définit l'encodage par défaut en UTF-8.
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+#Force le https
+# RewriteCond %{HTTPS} off
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
